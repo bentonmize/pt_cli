@@ -1,0 +1,23 @@
+{
+  "name": "pt-cli",
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "@types/node-fetch": "^2.6.4",
+    "@types/yargs": "^17.0.24",
+    "pkg": "^5.8.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "ptcli": "./build/cli.js"
+  },
+  "scripts": {
+    "package": "pkg . --targets node14-macos-x64 --output cli"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js"
+  }
+}
